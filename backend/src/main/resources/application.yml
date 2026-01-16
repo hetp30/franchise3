@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: franchise-platform
+  datasource:
+    url: jdbc:postgresql://localhost:5432/franchise_platform
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    com.platform: DEBUG
+
